@@ -1,0 +1,40 @@
+{
+	"name": "color2variable",
+	"displayName": "color2variable",
+	"description": "检查代码中匹配到 @ant-design/colors color 的值，提示对应的变量 ",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.53.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:color2variable.helloWorld"
+	],
+	"main": "./src/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "color2variable.helloWorld",
+				"title": "Hello World"
+			}
+		]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.63.0",
+		"@types/glob": "^7.1.4",
+		"@types/mocha": "^9.0.0",
+		"@types/node": "14.x",
+		"eslint": "^8.1.0",
+		"glob": "^7.1.7",
+		"mocha": "^9.1.3",
+		"typescript": "^4.4.4",
+		"@vscode/test-electron": "^1.6.2"
+	}
+}
