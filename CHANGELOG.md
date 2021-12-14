@@ -3,8 +3,9 @@
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
 ### 0.0.2 (2021-12-14)
-
-
+- 完善README.md
+### 0.0.1 (2021-12-13)
+- 基础功能搭建
 ### Features
 
 * 功能开发 ([dedee0d](https://github.com/specialCoder/vscode-extention-color2variable/commit/dedee0d0ea89468fa9633a47f789ca22eb374651))

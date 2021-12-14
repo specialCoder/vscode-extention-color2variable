@@ -1,7 +1,7 @@
 {
 	"name": "color2variable",
 	"displayName": "color2variable",
-	"description": "检查代码中匹配到 @ant-design/colors color 的值，提示对应的变量 ",
+	"description": "检查代码中匹配到 @ant-design/colors color 的值，将颜色值转换成对应的变量。",
 	"version": "0.0.2",
 	"engines": {
 		"vscode": "^1.53.0"
