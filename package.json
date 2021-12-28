@@ -1,69 +1,69 @@
 {
-	"name": "color2variable",
-	"displayName": "color2variable",
-	"description": "检查代码中匹配到 @ant-design/colors color 的值，将颜色值转换成对应的变量。",
-	"version": "0.0.2",
-	"engines": {
-		"vscode": "^1.53.0"
-	},
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-		"onCommand:color2variable.color-to-variable"
-	],
-	"main": "./src/extension.js",
-	"icon": "",
-	"contributes": {
-		"configuration": {
-			"title": "color2variable",
-			"properties": {
-				"color2variable.only-change-first-ocurrence": {
-					"type": "boolean",
-					"default": false,
-					"description": "每一行的第一个匹配值被转换"
-				},
-				"color2variable.notify-if-no-changes": {
-					"type": "boolean",
-					"default": true,
-					"description": "没有可转换的内容时警告提示"
-				}
-			}
-		},
-		"commands": [
-			{
-				"command": "color2variable.color-to-variable",
-				"title": "color2variable: Convert color to variable"
-			}
-		],
-		"keybindings": [
-			{
-				"command": "color2variable.color-to-variable",
-				"key": "ctrl+t",
-				"mac": "cmd+t",
-				"when": "editorTextFocus"
-			}
-		]
-	},
-	"scripts": {
-		"lint": "eslint .",
-		"pretest": "npm run lint",
-		"test": "node ./test/runTest.js",
-		"release": "standard-version"
-	},
-	"devDependencies": {
-		"@types/glob": "^7.1.4",
-		"@types/mocha": "^9.0.0",
-		"@types/node": "14.x",
-		"@types/vscode": "^1.53.0",
-		"@vscode/test-electron": "^1.6.2",
-		"eslint": "^8.1.0",
-		"glob": "^7.1.7",
-		"mocha": "^9.1.3",
-		"standard-version": "^9.3.2",
-		"typescript": "^4.4.4"
-	},
-	"dependencies": {
-		"color2variable": "^0.0.1"
-	}
+  "name": "color2variable",
+  "displayName": "color2variable",
+  "description": "检查代码中匹配到 @ant-design/colors color 的值，将颜色值转换成对应的变量。",
+  "version": "0.0.2",
+  "engines": {
+    "vscode": "^1.53.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:color2variable.color-to-variable"
+  ],
+  "main": "./src/extension.js",
+  "icon": "imgs/icon.png",
+  "contributes": {
+    "configuration": {
+      "title": "color2variable",
+      "properties": {
+        "color2variable.only-change-first-ocurrence": {
+          "type": "boolean",
+          "default": false,
+          "description": "每一行的第一个匹配值被转换"
+        },
+        "color2variable.notify-if-no-changes": {
+          "type": "boolean",
+          "default": true,
+          "description": "没有可转换的内容时警告提示"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "color2variable.color-to-variable",
+        "title": "color2variable: Convert color to variable"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "color2variable.color-to-variable",
+        "key": "ctrl+t",
+        "mac": "cmd+t",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js",
+    "release": "standard-version"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.4",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "14.x",
+    "@types/vscode": "^1.53.0",
+    "@vscode/test-electron": "^1.6.2",
+    "eslint": "^8.1.0",
+    "glob": "^7.1.7",
+    "mocha": "^9.1.3",
+    "standard-version": "^9.3.2",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "color2variable": "^0.0.1"
+  }
 }
